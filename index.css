@@ -1,0 +1,48 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(32, 32, 32);
+  color: white;
+}
+
+p {
+  margin-bottom: 50px;
+  font-size: 15px;
+}
+.container {
+  display: flex;
+}
+.Selfie {
+  display: flex;
+  width: 400px;
+  float: right;
+  margin-left: 150px;
+  margin-top: 20px;
+  height: 100%;
+}
+.textbox {
+  width: 30%;
+}
+body {
+  margin-left: 80px;
+}
+h1 {
+  font-size: 40pt;
+}
+.jonkopingview {
+  height: auto;
+  width: auto;
+  max-height: 300px;
+  max-width: 600px;
+  float: right;
+  margin-left: 150px;
+}
+.studentlife {
+  height: auto;
+  width: auto;
+  display: flex;
+  max-height: 300px;
+  max-width: fit-content;
+  float: right;
+  margin-left: 150px;
+  margin-right: 150px;
+}
