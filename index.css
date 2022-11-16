@@ -7,6 +7,7 @@
 p {
   margin-bottom: 50px;
   font-size: 15px;
+  font-family: "Montserrat";
 }
 .container {
   display: flex;
@@ -21,6 +22,7 @@ p {
 }
 .textbox {
   width: 30%;
+  font-size: 15px;
 }
 body {
   margin-left: 80px;
@@ -35,6 +37,7 @@ h1 {
   max-width: 600px;
   float: right;
   margin-left: 150px;
+  margin-top: 75px;
 }
 .studentlife {
   height: auto;
@@ -44,5 +47,117 @@ h1 {
   max-width: fit-content;
   float: right;
   margin-left: 150px;
-  margin-right: 150px;
+  margin-right: 300px;
+  margin-top: 75px;
+}
+html body {
+  margin: 10px;
+  margin-right: 10px;
+}
+.header {
+  background-color: rgb(64, 127, 119);
+  grid-area: header;
+  font-size: 60px;
+  height: 100px;
+  text-align: center;
+  padding: 40px;
+
+  margin-top: 30px;
+}
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-rows: 2rem 1fr 2rem;
+  grid-template-areas:
+    "header header header"
+    ".content."
+    "footer footer footer";
+  min-height: 100vh;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: rgb(43, 24, 24);
+  grid-area: content;
+  margin-top: 200px;
+  margin-bottom: 50px;
+  min-height: 600px;
+}
+.grid-item1 {
+  background-color: rgb(220, 220, 220);
+  background-image: url("images/powerpuff.ai");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.grid-item2 {
+  background-color: rgb(50, 50, 50);
+  background-image: url("images/logo.pdf");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.grid-item3 {
+  background-color: rgb(220, 220, 220);
+  background-image: url("images/iphone.svg");
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.grid-item4 {
+  background-color: rgb(64, 127, 119);
+  background-image: url("images/skinstars.jpg");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.grid-item5 {
+  background-color: rgb(220, 220, 220);
+  background-image: url("images/glossier.pdf");
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.grid-item6 {
+  background-color: rgb(64, 127, 119);
+  background-image: url("images/stars.jpg");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.footer {
+  background-color: rgb(64, 127, 119);
+  grid-area: footer;
+  height: 100px;
+}
+.logo {
+  display: grid;
+  float: right;
+  padding: 0px;
+
+  margin-right: 600px;
+}
+.typonew {
+  width: 400px;
+  background-color: rgb(250, 250, 250);
+  padding: 6px;
+}
+.moodboard {
+  width: 400px;
+  margin-right: 15px;
+}
+
+.layout {
+  width: 400px;
+  background-color: rgb(250, 250, 250);
+  padding: 15px;
+}
+.wrap {
+  display: grid;
+  grid-template-areas: "text" "logo" "typo" "layoutasa";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding-top: 80px;
 }
