@@ -28,8 +28,38 @@ min-height: 600px;
 }
 
 .hero-text {
-  animation: color-change 2s infinite;
+  animation: color-change 1s infinite;
   animation-fill-mode: forwards;
+}
+.hero-text2 {
+  background: none;
+  position: absolute;
+  font-size: 24px;
+ align-self: center;
+ display: flex;
+ margin-left: 70px;
+ margin-top: 30px;
+
+}
+.hero-text2:hover {
+  animation-name: hero-animation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 3;
+  animation-fill-mode: forwards;
+  transform-origin: center;
+}
+@keyframes hero-animation {
+0% {
+  transform: scale(1);
+}
+50% {
+  transform: scale(2);
+}
+100% {
+  transform: scale(1);
+}
+
 }
 
 @keyframes color-change {
