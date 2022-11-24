@@ -1,0 +1,15 @@
+.hero-text {
+  animation-name: crazy-headline;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-iteration-count: 2;
+}
+@keyframes hero-text {
+  from {
+    background-color: aqua;
+  }
+  to {
+    background-color: aquamarine;
+  }
+}
